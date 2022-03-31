@@ -1,0 +1,112 @@
+#задание 1
+#a =int (input())
+#b =int (input())
+#c =int (input())
+#d =int (input())
+#for g in range (c,d+1):
+#    print('\t'+str(g),end='')
+#print(end='\n')
+#for i in range (a,b+1):
+#    print(str(i)+'\t',end='')
+#    for j in range (c,d+1):
+#        print(str(i*j),end='\t')
+#    print(end='\n')
+
+#задание 2
+#a = 0
+#while a<=100:
+#  a = int (input())
+#  if a > 100:
+#    break
+#  if a<10:
+#    continue
+#  print(a)
+
+#задание 3
+#c = int (input())
+#s = 0
+#while c != 0:
+#    s = s + c
+#    c = int (input())
+#print (s)
+#задание 4
+#a = int(input())
+#b = int(input())
+#res = a
+#while res % b != 0:
+#    res += a
+#print(res)
+
+#задание 5
+#a = int(input())
+#b = int(input())
+#s = 0
+#c = 0
+#for j in range (a,b+1):
+#    if j%3 == 0:
+#        s = s+j #42
+#        c = c+1
+#    j+=1
+#print(s/c)
+
+#задание 6
+#a =  input() # input auto use type str
+#s1 = a.upper().count('c'.upper())
+#s2 = a.upper().count('g'.upper())
+#S=s1+s2
+#print(S/len(a)*100)
+
+#задание 7
+#s = [ int(i) for i in input().split()]
+#summ = 0 
+#l = len(s)-1
+#for i in range(0,l+1):
+#    summ = summ + s[i]
+#print(summ)
+
+#задание 8
+#s = [ int(i) for i in input().split()]
+#t = []
+#l = len(s)-1
+#k = 0
+#i = 0
+#if len(s)==0:
+#    print(str(0))
+#else:
+#    for st in s:
+#        if len(s)>1:
+#            if i==0:
+#                k = s[i+1] + s[-1]
+#                t.append(k)
+#            elif i>0 and i<l:
+#                k=s[i-1]+s[i+1]
+#                t.append(k)
+#            elif i==l:
+#                k = s[i-1]+s[0]
+#                t.append(k)
+#        elif len(s)==1:
+#            k = s[i]
+#            t.append(k)       
+#        i +=1
+#    j = 0
+#    for st2 in t:
+#        print(str(t[j])+' ',end='')
+#        j +=1
+
+#задание 9
+#s = [ int(i) for i in input().split()]
+#t = []
+#s.sort()
+#l = len(s)-1
+#k = 100000
+#if len(s)!=1:
+#    for i in range(0,l):
+#        if s[i]==s[i+1] and s[i]!=k:
+#            t.append(s[i])
+#            k=s[i]
+#    for j in range(l,l+1):
+#        if s[-1]==s[-2] and s[j]!=k:
+#            t.append(s[j])
+#n = len(t)
+#for g in range(0,n):
+#    print(t[g],end=' ')
